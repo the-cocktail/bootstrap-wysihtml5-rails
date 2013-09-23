@@ -394,10 +394,16 @@
         "image": true,
         events: {},
         parserRules: {
+            classes: {
+                // (path_to_project/lib/css/wysiwyg-color.css)
+                "*": 1
+            },
             tags: {
                 "b":  {},
                 "i":  {},
                 "br": {},
+                "strong": 1,
+                "italic": 1,
                 "p": {},
                 "ol": {},
                 "ul": {},
@@ -410,7 +416,14 @@
                 "h6": {},
                 "blockquote": {},
                 "u": 1,
-                "img": {}
+                "img": {
+                    "check_attributes": {
+                        "width": "numbers",
+                        "alt": "alt",
+                        "src": "url",
+                        "height": "numbers",
+                        "class": "alt"
+                    }
                 },
                 "a":  {
                     check_attributes: {
