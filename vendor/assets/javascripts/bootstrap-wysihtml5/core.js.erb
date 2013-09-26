@@ -396,7 +396,11 @@
         parserRules: {
             classes: {
                 // (path_to_project/lib/css/wysiwyg-color.css)
-                "*": 1
+                "m_goto_home": 1,
+                "mbl": 1,
+                "align_left": 1,
+                "align_center": 1,
+                "align_right": 1
             },
             tags: {
                 "b":  {},
@@ -425,7 +429,9 @@
                         "alt": "alt",
                         "src": "url",
                         "height": "numbers",
-                        "class": "alt"
+                    },
+                    "set_attributes": {
+                        "class": "align_center"
                     }
                 },
                 "a":  {
@@ -435,8 +441,8 @@
                         'rel': 'alt'
                     }
                 },
-                "span": 1,
-                "div": 1,
+                "span": {},
+                "div": true,
                 // to allow save and edit files with code tag hacks
                 "code": 1,
                 "pre": 1
