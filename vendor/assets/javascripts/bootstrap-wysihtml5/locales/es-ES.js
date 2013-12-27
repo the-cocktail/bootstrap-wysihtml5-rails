@@ -25,6 +25,7 @@
               indent: "Agregar sangría"
         },
         link: {
+              target: "Abrir en una nueva ventana",
               insert: "Insertar enlace",
               cancel: "Cancelar"
         },
