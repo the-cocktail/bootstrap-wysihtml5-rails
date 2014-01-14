@@ -447,14 +447,22 @@
                     }
                 },
                 "a":  {
-                    check_attributes: {
+                    "check_attributes": {
                         'href': "url", // important to avoid XSS
                         'target': 'alt',
                         'rel': 'alt'
                     }
                 },
-                "span": {},
-                "div": true,
+                "span": {
+                    "check_attributes": {
+                        'id': 'alt'
+                    }
+                },
+                "div": {
+                    "check_attributes": {
+                        'id': 'alt'
+                    }
+                },
                 // to allow save and edit files with code tag hacks
                 "code": 1,
                 "pre": 1
